@@ -66,6 +66,8 @@ export default function Home() {
       const index = chains.indexOf(chain);
       const next = index === chains.length - 1 ? 0 : index + 1;
 
+      if (!document.hasFocus()) return;
+      
       setChain(chains[next]);
     }, 5000);
 
