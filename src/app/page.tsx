@@ -79,7 +79,7 @@ export default function Home() {
             animate={{ opacity: [0.6, 1] }}
             transition={{ duration: .4, delay: 0.4, ease: 'easeInOut' }}
           >PLAY</motion.span>
-            <br /> "</span>
+            <br /> &qout;</span>
           <motion.span className="text-black dark:text-white"
             animate={{ opacity: [0.6, 1] }}
             transition={{ duration: .4, delay: 0.8, ease: 'easeInOut' }}
@@ -91,7 +91,7 @@ export default function Home() {
           >
             THEN THAT
           </motion.span>
-          <span className="text-black/60 dark:text-white/60">"</span><br /> 
+          <span className="text-black/60 dark:text-white/60">&qout;</span><br /> 
           <span className="text-black/60 dark:text-white/60">FOR</span>
           <motion.span className="relative w-full"
             animate={{ opacity: [0.6, 1] }}

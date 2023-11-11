@@ -52,7 +52,7 @@ export function MarqueeItem({ speed, children }: { speed: any, children: React.R
 
   useEffect(() => {
     loopStart();
-  }, []);
+  }, [loopStart]);
 
   return (
     <motion.div className="leading-[-0.05rem] text-lg whitespace-nowrap user-select-none pr-[0.25rem] text-black/60 dark:text-white/60" ref={itemRef}>

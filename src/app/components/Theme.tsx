@@ -5,13 +5,18 @@ import { useEffect, useState } from 'react'
 import { Moon, Sun } from 'lucide-react'
 
 export default function Theme() { 
-  const [theme, setTheme] = useState(localStorage.theme || 'light')
+  const [theme, setTheme] = useState('dark')
+
+  useEffect(() => { 
+    if (typeof window !== 'undefined' && localStorage.theme) setTheme(localStorage.theme)
+  }, [])
 
   useEffect(() => { 
     if (theme === 'dark') document.documentElement.classList.add('dark')
     else document.documentElement.classList.remove('dark')
 
     localStorage.theme = theme
+
     setTheme(theme)
   }, [theme])
 
