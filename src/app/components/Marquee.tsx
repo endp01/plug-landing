@@ -6,7 +6,7 @@ import { motion, PanInfo, useSpring, useTransform } from 'framer-motion'
 import { useRafLoop } from 'react-use';
 import normalizeWheel from "normalize-wheel";
 
-const text = "FINALLY UNLOCK THE POWER THE BLOCKCHAIN WAS INTENDED TO HAVE // EMPORIUM PUBLIC ALPHA COMING SOON // " 
+const text = "FINALLY UNLOCK THE POWER THE BLOCKCHAIN WAS INTENDED TO HAVE // PLUG PUBLIC ALPHA COMING SOON // " 
 const count = 10
 
 export function MarqueeItem({ speed, children }: { speed: any, children: React.ReactNode }) { 

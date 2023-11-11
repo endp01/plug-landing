@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import { Twitter } from "lucide-react";
 
@@ -8,6 +9,8 @@ import Marquee from "./components/Marquee";
 import Theme from "./components/Theme";
 
 import "./globals.css";
+
+import logoWhite from "../../assets/logo-white.svg";
 
 export const metadata: Metadata = {
   title: "Plug",
@@ -28,8 +31,11 @@ export default function RootLayout({
           <div className="mx-8 flex flex-col mb-auto">
             <div className="flex flex-row gap-4 mt-4 mb-auto items-center justify-center">
               <Link className="relative text-xl mr-8" href="/">
-                EMPORIUM
-                <span className="absolute top-0 h-min ml-1 p-1 leading-none rounded-md text-[8px] font-bold text-white bg-black dark:text-black dark:bg-white">
+                <div className="flex flex-row items-center gap-2">
+                  <Image src={logoWhite} alt="Plug" width={24} height={24} className="bg-black rounded-full p-1" />
+                  PLUG
+                </div>
+                <span className="absolute left-full top-0 h-min ml-2 p-1 leading-none rounded-md text-[8px] font-bold text-white bg-black dark:text-black dark:bg-white">
                   ALPHA
                 </span>
               </Link>
