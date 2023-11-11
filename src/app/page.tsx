@@ -219,7 +219,6 @@ export default function Home() {
                 </motion.div>
 
                 <motion.input
-                  autoFocus
                   ref={ref}
                   className="bg-white dark:bg-black text-black/60 dark:text-white/60 p-4 pl-0 outline-none placeholder-black/60 dark:placeholder-white/60 w-[100%]"
                   type="text"

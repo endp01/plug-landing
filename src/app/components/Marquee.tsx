@@ -42,10 +42,10 @@ export function MarqueeItem({ speed, children }: { speed: any, children: React.R
   };
 
   useEffect(() => {
-    if (itemRef.current) {
-      rectRef.current = itemRef.current.getBoundingClientRect();
-    }
-  }, [width, height]);
+    if(!itemRef.current) return 
+
+    rectRef.current = itemRef.current.getBoundingClientRect();
+  }, [itemRef, rectRef, width, height]);
 
 
   const [_, loopStart] = useRafLoop(loop, false);
