@@ -146,7 +146,13 @@ export default function Home() {
           exit={{ opacity: 0 }}
           transition={{ duration: .4, ease: 'easeInOut' }}
         >
-          <ChevronRight className="text-black/40 dark:text-white/40 ml-8" size={24} />
+          <motion.div className="ml-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: [0.4, 0.6, 0.4] }}
+            transition={{ duration: 1.2, ease: 'easeInOut', repeat: Infinity }}
+          >
+            <ChevronRight className="text-black dark:text-white" size={24} />
+          </motion.div>
 
           <motion.input
             autoFocus
