@@ -48,6 +48,7 @@ export default function Form() {
   return (
     <>
       <Fireworks enabled={typeof submit === "number"} />
+
       <form
         onSubmit={handleSubmit}
         className="h-min flex flex-col lg:flex-row items-center justify-center border-t-[1px] border-black/10 dark:border-white/10"

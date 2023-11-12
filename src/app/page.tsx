@@ -112,14 +112,14 @@ export default function Home() {
 
           <div className="grid col-span-12 grid-cols-10 lg:grid-cols-12 xl:grid-cols-10 gap-4 lg:gap-12">
             <div className="col-span-9 lg:col-span-4 xl:col-span-3">
-              <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center">
+              <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center text-transparent bg-clip-text bg-gradient-to-b from-black dark:from-white to-black/60 dark:to-white/60">
                 <Sparkles
                   className="text-black/40 dark:text-white/40"
                   size={24}
                 />
                 CONDITIONAL EXECUTION
               </h3>
-              <p className="text-justify text-black/60 dark:text-white/60 ml-10">
+              <p className="text-transparent bg-clip-text bg-gradient-to-t from-black dark:from-white to-black/60 dark:to-white/60 text-justify ml-10">
                 The reliance on opaque and single-statement blockchain transactions has resulted in
                 significant unexpected costs. With Plug, transactions are 
                 defined with verbose conditions.
@@ -127,11 +127,11 @@ export default function Home() {
             </div>
 
             <div className="col-span-9 lg:col-span-4 xl:col-span-3">
-              <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center">
+              <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center text-transparent bg-clip-text bg-gradient-to-b from-black dark:from-white to-black/60 dark:to-white/60">
                 <Puzzle className="text-black/40 dark:text-white/40" size={24} />
                 SEAMLESS INTEGRATION
               </h3>
-              <p className="text-justify text-black/60 dark:text-white/60 ml-10">
+              <p className="text-transparent bg-clip-text bg-gradient-to-t from-black dark:from-white to-black/60 dark:to-white/60 text-justify ml-10">
                 Plug is designed to work with any smart contract deployed past,
                 present or future without gas overhead. There is no need to
                 migrate or deploy a contract.
@@ -139,11 +139,11 @@ export default function Home() {
             </div>
 
             <div className="col-span-9 lg:col-span-4 xl:col-span-3">
-              <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center">
+              <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center text-transparent bg-clip-text bg-gradient-to-b from-black dark:from-white to-black/60 dark:to-white/60">
                 <Receipt className="text-black/40 dark:text-white/40" size={24} />
                 ALL EVM BLOCKCHAINS
               </h3>
-              <p className="text-justify text-black/60 dark:text-white/60 ml-10">
+              <p className="text-transparent bg-clip-text bg-gradient-to-t from-black dark:from-white to-black/60 dark:to-white/60 text-justify ml-10">
                 Plug was designed to operate on all EVM compatible blockchains
                 such as Optimism, Base, etc.. Thanks to this, cross-chain
                 functionality is included right out of the box.
