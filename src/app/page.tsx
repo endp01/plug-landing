@@ -8,7 +8,6 @@ import {
   Sparkles,
 } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import Form from "./components/Form";
 
 const chains = [
   "ethereum",
