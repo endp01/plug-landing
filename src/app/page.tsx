@@ -120,8 +120,8 @@ export default function Home() {
                 CONDITIONAL EXECUTION
               </h3>
               <p className="text-justify text-black/60 dark:text-white/60 ml-10">
-                The reliance on imperative blockchain transactions has resulted in
-                significant and growing costs. With Plug, transactions can be
+                The reliance on opaque and single-statement blockchain transactions has resulted in
+                significant unexpected costs. With Plug, transactions are 
                 defined with verbose conditions.
               </p>
             </div>
@@ -145,7 +145,7 @@ export default function Home() {
               </h3>
               <p className="text-justify text-black/60 dark:text-white/60 ml-10">
                 Plug was designed to operate on all EVM compatible blockchains
-                including the most popular L2s. With this cross-chain
+                such as Optimism, Base, etc.. Thanks to this, cross-chain
                 functionality is included right out of the box.
               </p>
             </div>

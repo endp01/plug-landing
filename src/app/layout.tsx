@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 
-import { Twitter } from "lucide-react";
+import { Activity, Book, Github, Twitter } from "lucide-react";
 
 import Marquee from "./components/Marquee";
 import Theme from "./components/Theme";
@@ -33,7 +33,7 @@ export default function RootLayout({
 
           <div className="mx-4 lg:mx-8 flex flex-col mb-auto">
             <div className="flex flex-row gap-4 mt-4 mb-auto items-center justify-center">
-              <Link className="relative text-xl mr-8" href="/">
+              <Link className="relative text-xl mr-12" href="/">
                 <div className="flex flex-row items-center gap-2">
                   <Image src={logoWhite} alt="Plug" width={24} height={24} className="bg-black rounded-full p-1" />
                   PLUG
@@ -43,13 +43,47 @@ export default function RootLayout({
                 </span>
               </Link>
 
-              <Theme />
               <a
-                href="https://twitter.com/withplug"
+                href="https://docs.onplug.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Book 
+                  className="text-black/60 dark:text-white/40"
+                  size={18}
+                />
+              </a>
+
+              <a
+                href="https://status.onplug.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Activity 
+                  className="text-black/60 dark:text-white/40"
+                  size={18}
+                />
+              </a>
+
+              <Theme />
+
+              <a
+                href="https://twitter.com/onplug_io"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Twitter
+                  className="text-black/60 dark:text-white/40"
+                  size={18}
+                />
+              </a>
+
+              <a
+                href="https://github.com/nftchance/plug"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github 
                   className="text-black/60 dark:text-white/40"
                   size={18}
                 />
