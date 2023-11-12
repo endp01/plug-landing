@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 
 import {
   ChevronRight,
@@ -80,7 +80,7 @@ export default function Form() {
 
               <motion.input
                 ref={ref}
-                className="bg-white dark:bg-black text-black/60 dark:text-white/60 p-4 pl-0 outline-none placeholder-black/60 dark:placeholder-white/60 w-[100%]"
+                className="backdrop-filter backdrop-blur-lg bg-transparent text-black/60 dark:text-white/60 p-4 pl-0 outline-none placeholder-black/60 dark:placeholder-white/60 w-[100%]"
                 type="text"
                 value={form}
                 onChange={(e) => setForm(e.target.value.trim())}

@@ -31,7 +31,7 @@ export default function RootLayout({
 
           <div className="lg:hidden"><Form /></div>
 
-          <div className="mx-4 lg:mx-8 flex flex-col mb-auto">
+          <div className="px-4 lg:px-8 pb-4 flex flex-col mb-auto text-shadow-blur shadow-white dark:shadow-black">
             <div className="flex flex-row gap-4 mt-4 mb-auto items-center justify-center">
               <Link className="relative text-xl mr-12" href="/">
                 <div className="flex flex-row items-center gap-2">
@@ -49,7 +49,7 @@ export default function RootLayout({
                 rel="noopener noreferrer"
               >
                 <Book 
-                  className="text-black/60 dark:text-white/40"
+                  className="text-black/60 dark:text-white/40 hover:text-black/80 dark:hover:text-white/80 transition-all duration-200 ease-in-out"
                   size={18}
                 />
               </a>
@@ -60,7 +60,7 @@ export default function RootLayout({
                 rel="noopener noreferrer"
               >
                 <Activity 
-                  className="text-black/60 dark:text-white/40"
+                  className="text-black/60 dark:text-white/40 hover:text-black/80 dark:hover:text-white/80 transition-all duration-200 ease-in-out"
                   size={18}
                 />
               </a>
@@ -73,7 +73,7 @@ export default function RootLayout({
                 rel="noopener noreferrer"
               >
                 <Twitter
-                  className="text-black/60 dark:text-white/40"
+                  className="text-black/60 dark:text-white/40 hover:text-black/80 dark:hover:text-white/80 transition-all duration-200 ease-in-out"
                   size={18}
                 />
               </a>
@@ -84,7 +84,7 @@ export default function RootLayout({
                 rel="noopener noreferrer"
               >
                 <Github 
-                  className="text-black/60 dark:text-white/40"
+                  className="text-black/60 dark:text-white/40 hover:text-black/80 dark:hover:text-white/80 transition-all duration-200 ease-in-out"
                   size={18}
                 />
               </a>

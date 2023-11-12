@@ -47,7 +47,6 @@ export function MarqueeItem({ speed, children }: { speed: any, children: React.R
     rectRef.current = itemRef.current.getBoundingClientRect();
   }, [itemRef, rectRef, width, height]);
 
-
   const [_, loopStart] = useRafLoop(loop, false);
 
   useEffect(() => {
@@ -130,7 +129,7 @@ export default function Marquee({ speed = 1, threshold = 0.014, wheelFactor = 1.
 
   useRafLoop(loop);
 
-  return <div className="border-b-[1px] py-4 border-black/10 dark:border-white/10">
+  return <div className="border-b-[1px] py-4 border-black/10 dark:border-white/10 backdrop-blur-lg">
     <motion.div
       className="flex items-center cursor-grab"
       ref={ref}

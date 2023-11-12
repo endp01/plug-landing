@@ -9,6 +9,8 @@ import {
 } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
+import Grid from "./components/Grid";
+
 const chains = [
   "ethereum",
   "polygon",
@@ -38,9 +40,11 @@ export default function Home() {
 
   return (
     <>
+      <Grid />
+
       <div className="mt-auto flex flex-col">
         <div className="h-full mx-4 lg:mx-8 mb-12">
-          <motion.h1 className="text-4xl lg:text-7xl mb-12 mt-12 lg:mt-0">
+          <motion.h1 className="text-4xl lg:text-7xl mb-12 mt-12 lg:mt-0 text-shadow-blur shadow-white dark:shadow-black">
             <span className="text-black/60 dark:text-white/60">
               <motion.span
                 className="text-black dark:text-white"
@@ -110,7 +114,7 @@ export default function Home() {
           </motion.h1>
 
           <div className="grid col-span-12 grid-cols-10 lg:grid-cols-12 xl:grid-cols-10 gap-4 lg:gap-12">
-            <div className="col-span-9 lg:col-span-4 xl:col-span-3">
+            <div className="col-span-9 lg:col-span-4 xl:col-span-3 text-shadow-blur shadow-white dark:shadow-black">
               <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center text-transparent bg-clip-text bg-gradient-to-b from-black dark:from-white to-black/60 dark:to-white/60">
                 <Sparkles
                   className="text-black/40 dark:text-white/40"
@@ -125,7 +129,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="col-span-9 lg:col-span-4 xl:col-span-3">
+            <div className="col-span-9 lg:col-span-4 xl:col-span-3 text-shadow-blur shadow-white dark:shadow-black">
               <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center text-transparent bg-clip-text bg-gradient-to-b from-black dark:from-white to-black/60 dark:to-white/60">
                 <Puzzle className="text-black/40 dark:text-white/40" size={24} />
                 SEAMLESS INTEGRATION
@@ -137,7 +141,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="col-span-9 lg:col-span-4 xl:col-span-3">
+            <div className="col-span-9 lg:col-span-4 xl:col-span-3 text-shadow-blur shadow-white dark:shadow-black">
               <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center text-transparent bg-clip-text bg-gradient-to-b from-black dark:from-white to-black/60 dark:to-white/60">
                 <Receipt className="text-black/40 dark:text-white/40" size={24} />
                 ALL EVM BLOCKCHAINS
