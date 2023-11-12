@@ -7,6 +7,7 @@ import { Twitter } from "lucide-react";
 
 import Marquee from "./components/Marquee";
 import Theme from "./components/Theme";
+import Form from "./components/Form";
 
 import "./globals.css";
 
@@ -28,7 +29,9 @@ export default function RootLayout({
         <div className="h-full flex flex-col">
           <Marquee />
 
-          <div className="mx-8 flex flex-col mb-auto">
+          <div className="lg:hidden"><Form /></div>
+
+          <div className="mx-4 lg:mx-8 flex flex-col mb-auto">
             <div className="flex flex-row gap-4 mt-4 mb-auto items-center justify-center">
               <Link className="relative text-xl mr-8" href="/">
                 <div className="flex flex-row items-center gap-2">
@@ -55,6 +58,8 @@ export default function RootLayout({
           </div>
 
           {children}
+
+          <div className="hidden lg:block"><Form /></div>
         </div>
       </body>
     </html>
