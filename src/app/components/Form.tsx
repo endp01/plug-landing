@@ -35,6 +35,8 @@ export default function Form() {
 
     if (!isValid || submit) return;
 
+    setSubmit(true)
+
     fetch("/api", {
       method: "POST",
       body: JSON.stringify({ identifier: form }),
@@ -121,8 +123,10 @@ export default function Form() {
                 />
               )}
 
-            {submit
+            {typeof submit === "number"
               ? `YOUR SPOT HAS BEEN SAVED AS #${submit}.`
+              : submit === true  
+              ? "SUBMITTING..."
               : form === "" || (form !== "" && isValid)
                 ? "REQUEST EARLY ACCESS"
                 : "INVALID ENTRY"}
