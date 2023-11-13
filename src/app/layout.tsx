@@ -26,14 +26,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-R4CD2DCM9W" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-HV1CGTDMJ8" />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'G-R4CD2DCM9W');
+          gtag('config', 'G-HV1CGTDMJ8');
         `}
       </Script>
       <body className="bg-white dark:bg-black text-black dark:text-white w-screen min-h-screen">
