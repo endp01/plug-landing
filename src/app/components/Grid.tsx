@@ -8,12 +8,13 @@ import useMouse from "../hooks/useMouse";
 export default function Grid() { 
   const { mouse, isMoved } = useMouse()
 
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   const cells = 10;
-  const cell = window.innerWidth / cells;
-  const cols = Math.floor(window.innerWidth / cell);
-  const ratio = window.innerWidth / window.innerHeight;
+  const cell = dimensions.width / cells;
+  const cols = Math.floor(dimensions.width / cell);
+  const ratio = dimensions.width / dimensions.height;
   const rows = Math.ceil(cols / ratio);
   const radius = Math.ceil(cell * 2 / 3);
 
@@ -33,6 +34,10 @@ export default function Grid() {
       }))
     })
   }, [mouse, position]);
+
+  useEffect(() => { 
+    setDimensions({ width: window.innerWidth, height: window.innerHeight })
+  }, [])
 
   return (
     <motion.div 
