@@ -51,7 +51,7 @@ export default function Grid() {
       transition={{ duration: 0.4, delay: 0.4, ease: "easeInOut" }}
     >
       {isMoved && <motion.div 
-        className={`absolute rounded-full z-[-2] bg-gradient-radial from-black dark:from-white to-transparent`}
+        className={`absolute rounded-full z-[-2] bg-gradient-radial from-black dark:from-white to-transparent blur-xl`}
         style={{ 
           width: radius * 2,
           height: radius * 2,
