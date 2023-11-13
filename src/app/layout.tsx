@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
 
 import { Activity, Book, Github, Twitter } from "lucide-react";
 
@@ -25,6 +26,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+      </Script>
       <body className="bg-white dark:bg-black text-black dark:text-white w-screen min-h-screen">
         <div className="h-full flex flex-col">
           <Marquee />
