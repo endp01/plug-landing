@@ -49,7 +49,7 @@ export default function Form() {
 
   return (
     <>
-      <Fireworks enabled={typeof submit === "number"} />
+      {submit !== false && <Fireworks enabled={typeof submit === "number"} />}
 
       <form
         onSubmit={handleSubmit}
