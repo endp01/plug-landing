@@ -2,16 +2,12 @@
 
 import { useMemo, useRef, useState } from "react";
 
-import {
-  ChevronRight,
-  PartyPopper,
-  TestTube2,
-} from "lucide-react";
+import { ChevronRight, PartyPopper, TestTube2 } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Fireworks from "./Fireworks";
 
-export default function Form() { 
+export default function Form() {
   const ref = useRef<HTMLInputElement>(null);
 
   const [form, setForm] = useState("");
@@ -35,7 +31,7 @@ export default function Form() {
 
     if (!isValid || submit) return;
 
-    setSubmit(true)
+    setSubmit(true);
 
     fetch("/api", {
       method: "POST",
@@ -117,22 +113,23 @@ export default function Form() {
                 size={18}
               />
             ) : (
-                <TestTube2
-                  className="text-white/40 dark:text-black/40"
-                  size={18}
-                />
-              )}
+              <TestTube2
+                className="text-white/40 dark:text-black/40"
+                size={18}
+              />
+            )}
 
             {typeof submit === "number"
-              ? `YOUR SPOT HAS BEEN SAVED AS #${submit}.`
-              : submit === true  
-              ? "SUBMITTING..."
-              : form === "" || (form !== "" && isValid)
-                ? "REQUEST EARLY ACCESS"
-                : "INVALID ENTRY"}
+              ? // 309 comes from saved spots before moving databases
+                `YOUR SPOT HAS BEEN SAVED AS #${309 + Number(submit)}.`
+              : submit === true
+                ? "SUBMITTING..."
+                : form === "" || (form !== "" && isValid)
+                  ? "REQUEST EARLY ACCESS"
+                  : "INVALID ENTRY"}
           </motion.button>
         </motion.div>
       </form>
     </>
-  )
+  );
 }
