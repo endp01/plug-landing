@@ -2,19 +2,16 @@
 
 import { useEffect, useState } from "react";
 
-import {
-  Puzzle,
-  Receipt,
-  Sparkles,
-} from "lucide-react";
+import { Puzzle, Receipt, Sparkles } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 import Grid from "./components/Grid";
 
 const chains = [
   "ethereum",
-  "polygon",
   "optimism",
+  "bera",
+  "polygon",
   "base",
   "gnosis",
   "arbitrum",
@@ -31,7 +28,7 @@ export default function Home() {
       const next = index === chains.length - 1 ? 0 : index + 1;
 
       if (!document.hasFocus()) return;
-      
+
       setChain(chains[next]);
     }, 5000);
 
@@ -123,32 +120,38 @@ export default function Home() {
                 CONDITIONAL EXECUTION
               </h3>
               <p className="text-transparent bg-clip-text bg-gradient-to-t from-black dark:from-white to-black/60 dark:to-white/60 text-justify ml-10">
-                The reliance on opaque and single-statement blockchain transactions has resulted in
-                significant unexpected costs. With Plug, transactions are 
-                defined with verbose conditions.
+                Unlocks the power of conditional execution for transactions on
+                EVM blockchains. From simple to complex, Plug can scale till
+                your heart's content.
               </p>
             </div>
 
             <div className="col-span-9 lg:col-span-4 xl:col-span-3 text-shadow-blur shadow-white dark:shadow-black">
               <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center text-transparent bg-clip-text bg-gradient-to-b from-black dark:from-white to-black/60 dark:to-white/60">
-                <Puzzle className="text-black/40 dark:text-white/40" size={24} />
+                <Puzzle
+                  className="text-black/40 dark:text-white/40"
+                  size={24}
+                />
                 SEAMLESS INTEGRATION
               </h3>
               <p className="text-transparent bg-clip-text bg-gradient-to-t from-black dark:from-white to-black/60 dark:to-white/60 text-justify ml-10">
-                Plug is designed to work with any smart contract deployed past,
-                present or future without gas overhead. There is no need to
-                migrate or deploy a contract.
+                Designed to work with any smart contract deployed past, present
+                or future, Plug has several levels of integration to chose from.
+                No need to deploy a new contract.
               </p>
             </div>
 
             <div className="col-span-9 lg:col-span-4 xl:col-span-3 text-shadow-blur shadow-white dark:shadow-black">
               <h3 className="text-2xl mb-4 flex flex-row gap-4 items-center text-transparent bg-clip-text bg-gradient-to-b from-black dark:from-white to-black/60 dark:to-white/60">
-                <Receipt className="text-black/40 dark:text-white/40" size={24} />
+                <Receipt
+                  className="text-black/40 dark:text-white/40"
+                  size={24}
+                />
                 ALL EVM BLOCKCHAINS
               </h3>
               <p className="text-transparent bg-clip-text bg-gradient-to-t from-black dark:from-white to-black/60 dark:to-white/60 text-justify ml-10">
                 Plug was designed to operate on all EVM compatible blockchains
-                such as Optimism, Base, etc.. Thanks to this, cross-chain
+                such as Optimism, Base, etc.. With this, cross-chain
                 functionality is included right out of the box.
               </p>
             </div>
