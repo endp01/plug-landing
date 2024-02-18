@@ -58,7 +58,7 @@ export default function Home() {
               >
                 PLAY
               </motion.span>
-              <br /> {'"'}
+              <br />
             </span>
             <motion.span
               className="text-black dark:text-white"
@@ -75,7 +75,7 @@ export default function Home() {
             >
               THEN THAT
             </motion.span>
-            <span className="text-black/60 dark:text-white/60">{'"'}</span>
+            <span className="text-black/60 dark:text-white/60"></span>
             <br />
             <span className="text-black/60 dark:text-white/60">FOR</span>
             <motion.span
@@ -122,7 +122,7 @@ export default function Home() {
               <p className="text-transparent bg-clip-text bg-gradient-to-t from-black dark:from-white to-black/60 dark:to-white/60 text-justify ml-10">
                 Unlocks the power of conditional execution for transactions on
                 EVM blockchains. From simple to complex, Plug can scale till
-                your heart's content.
+                your heart is content.
               </p>
             </div>
 
